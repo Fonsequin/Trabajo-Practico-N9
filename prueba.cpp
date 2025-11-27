@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int vector[10];
+    int vg[10];
+    int cantidad = 0;
+    int cz;
+    cout << "Este programa ve cuantos valores ingresados son unicos" << endl;
+    cout << "Ingresa los primeros 10 numeros del primer vector:" << endl;
+    for(int i = 0; i < 10; i++)
+    {                       
+	    {
+	        cin >> vector[i];
+	    }
+	}
+    while(cantidad <= 10)
+    {
+	    cz = cantidad;
+	    for(int j = cantidad; j == 0; j--)
+	    {
+	    	if(vector[j] == vector[j - cz])
+	    	{
+	    		vector[j] = vg[j];
+			}
+	    	cz = cz - 1;
+		}
+		cantidad++;
+	}
+	cout << endl << "Los valores unicos ingresados son: ";
+	for(int k; k <= 10; k++)
+	{
+		cout << vg[k] << " ";
+	}
+	return 0;
+}
